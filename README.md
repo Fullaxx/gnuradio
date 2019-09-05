@@ -63,35 +63,35 @@ Default: UTC
 ## Run the image
 Run the image on localhost port 5901 with default configuration
 ```
-docker run -d -p 127.0.0.1:5901:5901 fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 fullaxx/gnuradio
 ```
 Run the image with Depth 16
 ```
-docker run -d -p 127.0.0.1:5901:5901 -e VNCDEPTH='16' fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 -e VNCDEPTH='16' fullaxx/gnuradio
 ```
 Run the image with 1920x1080 Resolution
 ```
-docker run -d -p 127.0.0.1:5901:5901 -e VNCRES='1920x1080' fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 -e VNCRES='1920x1080' fullaxx/gnuradio
 ```
 Run the image with Password Authentication
 ```
-docker run -d -p 127.0.0.1:5901:5901 -e VNCPASS='vncpass' fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 -e VNCPASS='vncpass' fullaxx/gnuradio
 ```
 Run the image with Read-Write and Read-Only password (Using R/O pass requires R/W pass)
 ```
-docker run -d -p 127.0.0.1:5901:5901 -e VNCPASS='vncpass' -e VNCPASSRO='readonly' fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 -e VNCPASS='vncpass' -e VNCPASSRO='readonly' fullaxx/gnuradio
 ```
 Run the image as a non-root user account
 ```
-docker run -d -p 127.0.0.1:5901:5901 -e VNCUSER='guest' -e VNCUID='1000' fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 -e VNCUSER='guest' -e VNCUID='1000' fullaxx/gnuradio
 ```
 Run the image as a non-root user account with custom group
 ```
-docker run -d -p 127.0.0.1:5901:5901 -e VNCUSER='guest' -e VNCUID='1000' -e VNCGROUP='guests' -e VNCGID='1001' fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 -e VNCUSER='guest' -e VNCUID='1000' -e VNCGROUP='guests' -e VNCGID='1001' fullaxx/gnuradio
 ```
 Run the image in Tokyo
 ```
-docker run -d -p 127.0.0.1:5901:5901 -e TZ='Asia/Tokyo' fullaxx/ubuntu-desktop
+docker run -d -p 127.0.0.1:5901:5901 -e TZ='Asia/Tokyo' fullaxx/gnuradio
 ```
 
 ## Connect using vncviewer
