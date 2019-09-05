@@ -117,8 +117,6 @@
 
 <menu id="root-menu" label="Openbox 3">
 	<item label="GNURadio Companion"><action name="Execute"><command>gnuradio-companion</command></action></item>
-	<separator label="Terminals" />
-	<item label="xterm"><action name="Execute"><command>xterm</command></action></item>
 	<separator label="Applications" />
 	<menu id="apps-terminals-menu"/>
 	<menu id="apps-office-menu"/>
