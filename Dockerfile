@@ -9,9 +9,13 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C
 
 # ------------------------------------------------------------------------------
-# Install gnuradio and clean up
+# Install gnuradio and utilities and clean up
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends gnuradio && \
+    apt-get install -y --no-install-recommends \
+      gnuradio \
+      build-essential \
+      cmake \
+      git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 

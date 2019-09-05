@@ -93,6 +93,10 @@ Run the image in Tokyo
 ```
 docker run -d -p 127.0.0.1:5901:5901 -e TZ='Asia/Tokyo' fullaxx/gnuradio
 ```
+Run the image with extra permissions
+```
+docker run -d --privileged --network=host fullaxx/gnuradio
+```
 
 ## Connect using vncviewer
 ```
