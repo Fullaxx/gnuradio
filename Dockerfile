@@ -16,8 +16,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
 # ------------------------------------------------------------------------------
-# Install startup scripts
-COPY app.sh /app/
+# Install startup scripts and menu
+COPY app/app.sh /app/
+COPY conf/menu.xml /usr/share/ubuntu-desktop/openbox/
 
 # ------------------------------------------------------------------------------
 # Expose ports
